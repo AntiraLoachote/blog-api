@@ -12,12 +12,11 @@ class PostAdmin(admin.ModelAdmin):
     list_per_page = 30
     list_display = (
         'id',
-        'title',
         'text',
         'created_date',
-        'is_anonymous'
+        'author'
     )
     search_fields = (
-        'name',
-        'value',
+        'text',
+        'author',
     )
